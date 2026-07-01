@@ -1,0 +1,467 @@
+/* ===========================
+   TO MY HOME ❤️
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:linear-gradient(-45deg,
+    #ff9a9e,
+    #fad0c4,
+    #fbc2eb,
+    #a18cd1);
+
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+
+    overflow-x:hidden;
+    color:white;
+}
+
+/* Animated Background */
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* Floating Hearts */
+
+.hearts{
+
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+
+}
+
+.hearts::before{
+
+content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+
+position:absolute;
+
+left:-10%;
+
+font-size:24px;
+
+animation:floatHearts 20s linear infinite;
+
+opacity:.25;
+
+}
+
+@keyframes floatHearts{
+
+0%{
+
+transform:translateY(100vh)
+translateX(0);
+
+}
+
+100%{
+
+transform:translateY(-120vh)
+translateX(200px);
+
+}
+
+}
+
+/* Pages */
+
+.page{
+
+min-height:100vh;
+
+display:none;
+
+padding:40px 20px;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+animation:fadeIn .8s;
+
+}
+
+.page.active{
+
+display:flex;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* Glass Card */
+
+.glass{
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(15px);
+
+padding:40px;
+
+border-radius:25px;
+
+max-width:700px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* Headings */
+
+h1{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+h2{
+
+font-size:2.4rem;
+
+margin-bottom:35px;
+
+}
+
+h3{
+
+margin-top:15px;
+
+margin-bottom:10px;
+
+}
+
+p{
+
+font-size:1.1rem;
+
+line-height:1.8;
+
+}
+
+/* Buttons */
+
+button{
+
+padding:15px 35px;
+
+margin-top:35px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+background:white;
+
+color:#ff4f81;
+
+font-weight:bold;
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+button:hover{
+
+transform:translateY(-4px)
+scale(1.05);
+
+}
+
+.yes{
+
+background:#ff4f81;
+
+color:white;
+
+}
+
+.choco{
+
+background:white;
+
+color:#ff4f81;
+
+margin-left:15px;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+width:100%;
+
+max-width:1100px;
+
+margin-bottom:40px;
+
+}
+
+/* Cards */
+
+.card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+color:#444;
+
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.card h3{
+
+color:#ff4f81;
+
+}
+
+.card p{
+
+padding:0 20px 25px;
+
+}
+
+/* Letter */
+
+.letterBox{
+
+max-width:800px;
+
+text-align:left;
+
+}
+
+#typing{
+
+min-height:350px;
+
+font-size:1.1rem;
+
+line-height:2;
+
+white-space:pre-line;
+
+}
+
+/* Promise */
+
+.promiseGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+max-width:900px;
+
+width:100%;
+
+}
+
+.promise{
+
+background:rgba(255,255,255,.25);
+
+padding:30px;
+
+border-radius:20px;
+
+font-size:20px;
+
+backdrop-filter:blur(10px);
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.promise:hover{
+
+background:white;
+
+color:#ff4f81;
+
+transform:scale(1.05);
+
+}
+
+/* Final */
+
+.hero{
+
+width:280px;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+margin-bottom:30px;
+
+}
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+#finalMessage{
+
+margin-top:40px;
+
+font-size:28px;
+
+font-weight:bold;
+
+line-height:1.8;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+
+font-size:2.2rem;
+
+}
+
+h2{
+
+font-size:1.8rem;
+
+}
+
+.glass{
+
+padding:25px;
+
+}
+
+button{
+
+width:100%;
+
+margin-top:20px;
+
+}
+
+.buttons button{
+
+display:block;
+
+margin:15px auto;
+
+}
+
+.hero{
+
+width:220px;
+height:220px;
+
+}
+
+.card img{
+
+height:220px;
+
+}
+
+}

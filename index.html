@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Home ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<!-- Welcome -->
+
+<section id="welcome" class="page active">
+
+    <div class="glass">
+
+        <h1>Hi Riya ❤️</h1>
+
+        <p>
+
+            Before you close this page...
+
+            <br><br>
+
+            Please give me just
+
+            <strong>2 minutes.</strong>
+
+            <br><br>
+
+            I made something only for you.
+
+        </p>
+
+        <button onclick="nextPage('story')">
+
+            Begin Our Story ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- Story -->
+
+<section id="story" class="page">
+
+<h2>Our Beautiful Journey ❤️</h2>
+
+<div class="timeline">
+
+<div class="card fade">
+
+<img src="https://photos.app.goo.gl/y3PxLN8PuEiA24Af9.jpg">
+
+<h3>22 January 2020</h3>
+
+<p>
+
+The day my childhood friend
+
+became my wife.
+
+Best decision of my life.
+
+</p>
+
+</div>
+
+
+<div class="card fade">
+
+<img src="https://photos.app.goo.gl/4vjLxagbpQZyH8Ff7.jpg">
+
+<h3>Bali ❤️</h3>
+
+<p>
+
+My favourite travel partner.
+
+Every journey with you
+
+becomes beautiful.
+
+</p>
+
+</div>
+
+
+
+<div class="card fade">
+
+<img src="https://photos.app.goo.gl/UNeeegd8Uv8LNBd96.jpg">
+
+<h3>Our Princess 👶</h3>
+
+<p>
+
+The most beautiful gift
+
+life has given us.
+
+</p>
+
+</div>
+
+</div>
+
+<button onclick="nextPage('letter')">
+
+Continue ❤️
+
+</button>
+
+</section>
+
+
+<!-- Letter -->
+
+<section id="letter" class="page">
+
+<div class="glass letterBox">
+
+<h2>My Letter To You</h2>
+
+<p id="typing"></p>
+
+<button onclick="nextPage('promise')">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- Promise -->
+
+<section id="promise" class="page">
+
+<h2>My Promises ❤️</h2>
+
+<div class="promiseGrid">
+
+<div class="promise">
+
+❤️
+
+I promise
+
+to listen more.
+
+</div>
+
+<div class="promise">
+
+😊
+
+I promise
+
+to make you smile
+
+every day.
+
+</div>
+
+<div class="promise">
+
+✈️
+
+Our next trip
+
+will be
+
+EUROPE ❤️
+
+</div>
+
+</div>
+
+<button onclick="nextPage('final')">
+
+One Last Thing ❤️
+
+</button>
+
+</section>
+
+
+
+<!-- Final -->
+
+<section id="final" class="page">
+
+<img class="hero"
+
+src="photos/family.jpg">
+
+<h2>
+
+Will You
+
+Forgive Me?
+
+❤️
+
+</h2>
+
+<div class="buttons">
+
+<button class="yes"
+
+onclick="forgive()">
+
+Yes ❤️
+
+</button>
+
+<button class="choco"
+
+onclick="huckly()">
+
+Only after HucklyBuckly 🍨
+
+</button>
+
+</div>
+
+<div id="finalMessage"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
